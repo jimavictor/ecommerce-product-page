@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <header class="top-bar">
+      <img id="menu-icon" src="./images/icon-menu.svg" alt="icon-menu" />
+      <img id="logo" src="./images/logo.svg" alt="logo" />
+      <nav class="navigation">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icon-cart-avatar">
+        <div class="shopping-cart-container">
+          <p id="item-count">1</p>
+          <img
+            id="shopping-cart"
+            src="./images/icon-cart.svg"
+            alt="shopping-cart"
+          />
+          <!-- cart -->
+          <div class="cart-items">
+            <header><h1 id="title">Cart</h1></header>
+            <hr />
+            <div class="empty-cart">
+              <p>Your cart is empty</p>
+            </div>
+            <div class="lower-section">
+              <div id="info">
+                <div class="img-container">
+                  <img
+                    src="./images/image-product-1-thumbnail.jpg"
+                    alt="product-one-thumbnail"
+                  />
+                </div>
+                <div id="text">
+                  <p>Fall Limited Edition Sneakers</p>
+                  <p>
+                    $125.00 x <span id="number-of-items-added">3</span
+                    ><span id="amount"> $375.00</span>
+                  </p>
+                </div>
+                <div>
+                  <img
+                    id="icon-delete"
+                    src="./images/icon-delete.svg"
+                    alt="delete-icon"
+                  />
+                </div>
+              </div>
+              <button id="checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+        <img id="avatar" src="./images/image-avatar.png" alt="avatar" />
+      </div>
+    </header>
+    <hr id="desktop-line" />
+    <nav class="side-bar">
+      <div class="nav-container">
+        <img
+          class="close-icon"
+          src="./images/icon-close.svg"
+          alt="icon-close"
+        />
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="main-container">
+      <main>
+        <div class="image-slider-section">
+          <div class="image-container">
+            <div id="left-button">
+              <img src="./images/icon-previous.svg" alt="" />
+            </div>
+            <img
+              id="main-product"
+              src="./images/image-product-1.jpg"
+              alt="main-products"
+            />
+            <img
+              id="main-product-desktop"
+              src="./images/image-product-1.jpg"
+              alt="main-products"
+            />
+            <div id="right-button">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+          </div>
+          <div class="gallery-container">
+            <div class="thumbnail">
+              <img
+                class="thumbnail-img"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="thumbnail"
+              />
+              <div class="img-overlay"></div>
+            </div>
+            <div class="thumbnail">
+              <img
+                class="thumbnail-img"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="thumbnail"
+              />
+              <div class="img-overlay"></div>
+            </div>
+            <div class="thumbnail">
+              <img
+                class="thumbnail-img"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="thumbnail"
+              />
+              <div class="img-overlay"></div>
+            </div>
+            <div class="thumbnail">
+              <img
+                class="thumbnail-img"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="thumbnail"
+              />
+              <div class="img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="details-section">
+          <article>
+            <header>
+              <h1 id="company-name">SNEAKER COMPANY</h1>
+              <h1>
+                Fall Limited Edition <br />
+                Sneakers
+              </h1>
+            </header>
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </article>
+          <div class="price">
+            <header>
+              <span>
+                <h1>$125.00</h1>
+                <h1 id="percentage-off">50%</h1>
+              </span>
+            </header>
+            <header>
+              <h1 id="slashed-price">$250.00</h1>
+            </header>
+          </div>
+          <div class="action-buttons">
+            <div class="button-container">
+              <button id="decrease">
+                <img src="./images/icon-minus.svg" alt="increase" />
+              </button>
+              <p id="number-of-items">0</p>
+              <button id="increase">
+                <img src="./images/icon-plus.svg" alt="decrease" />
+              </button>
+            </div>
+            <button id="add-to-cart">
+              <img src="./images/icon-cart.svg" alt="add-to-cart" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="light-box">
+      <div class="pictures">
+        <img
+          id="close-icon-light-box"
+          src="./images/icon-close.svg"
+          alt="close-icon-light-box"
+        />
+        <div class="image-container">
+          <div id="left-arrow">
+            <img src="./images/icon-previous.svg" alt="" />
+          </div>
+          <img
+            id="main-product-light-box"
+            src="./images/image-product-1.jpg"
+            alt="main-products"
+          />
+          <div id="right-arrow">
+            <img src="./images/icon-next.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="gallery-container">
+          <div class="thumbnail">
+            <img
+              class="thumbnail-image"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumbnail"
+            />
+            <div class="img-overlay-light-box"></div>
+          </div>
+          <div class="thumbnail">
+            <img
+              class="thumbnail-image"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumbnail"
+            />
+            <div class="img-overlay-light-box"></div>
+          </div>
+          <div class="thumbnail">
+            <img
+              class="thumbnail-image"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumbnail"
+            />
+            <div class="img-overlay-light-box"></div>
+          </div>
+          <div class="thumbnail">
+            <img
+              class="thumbnail-image"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumbnail"
+            />
+            <div class="img-overlay-light-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
