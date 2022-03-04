@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ecommerce-product-page-solution](https://github.com/jimavictor/ecommerce-product-page)
+- Live Site URL: [ecommerce-product-page-website](https://jimavictor.github.io/ecommerce-product-page/)
 
 ## My process
 
