@@ -94,21 +94,29 @@ function decrease() {
     NumberOfItems.innerHTML = parseInt(NumberOfItems.innerHTML) - 1;
 }
 function rightMove() {
-  if (num < 4) num++;
+  if (num < 4) {
+    num++;
+  } else if (num >= 4) {
+    num = 1;
+  }
   productLightBox.src = `./images/image-product-${num}.jpg`;
   product.src = `./images/image-product-${num}.jpg`;
 }
 function leftMove() {
-  if (num > 1) num--;
+  if (num > 1) {
+    num--;
+  } else if (num == 1) {
+    num = 4;
+  }
   product.src = `./images/image-product-${num}.jpg`;
   productLightBox.src = `./images/image-product-${num}.jpg`;
 }
 function cancelButton() {
-  nav.style.display = "none";
+  nav.classList.remove("side-bar-show");
   overlay.classList.remove("overlay");
 }
 function showMenu() {
-  nav.style.display = "block";
+  nav.classList.add("side-bar-show");
   overlay.classList.add("overlay");
 }
 function removeLightBox() {
